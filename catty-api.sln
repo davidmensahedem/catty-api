@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1E257BAE-8709-47D3-9589-950AC727B9F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{D0232954-A69E-4CCA-B823-C5FB1593C290}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "documents", "documents", "{7EA4CFAE-EE41-4FE6-BF2B-8E0915D2D0C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{BB2E7FA0-9725-4AF8-B8DF-91B4460C6BB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catty.Api", "Catty.Api\Catty.Api.csproj", "{276E4727-92CB-4B12-BF77-DF16013D08BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catty.Core", "Catty.Core\Catty.Core.csproj", "{A4E84986-7F21-4E7D-AB56-6B67E9C207F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{276E4727-92CB-4B12-BF77-DF16013D08BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{276E4727-92CB-4B12-BF77-DF16013D08BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{276E4727-92CB-4B12-BF77-DF16013D08BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{276E4727-92CB-4B12-BF77-DF16013D08BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4E84986-7F21-4E7D-AB56-6B67E9C207F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4E84986-7F21-4E7D-AB56-6B67E9C207F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4E84986-7F21-4E7D-AB56-6B67E9C207F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4E84986-7F21-4E7D-AB56-6B67E9C207F4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BB2E7FA0-9725-4AF8-B8DF-91B4460C6BB2} = {1E257BAE-8709-47D3-9589-950AC727B9F7}
+		{276E4727-92CB-4B12-BF77-DF16013D08BD} = {BB2E7FA0-9725-4AF8-B8DF-91B4460C6BB2}
+		{A4E84986-7F21-4E7D-AB56-6B67E9C207F4} = {1E257BAE-8709-47D3-9589-950AC727B9F7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {012B31D7-4CD2-42CA-B0B0-F13AD46B6BDA}
+	EndGlobalSection
+EndGlobal
