@@ -28,8 +28,8 @@ namespace Catty.Core.Extensions
             {
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
-                    Title = "Catty Api", // can be dynamic
-                    Description = "Catty Api", // can be dynamic
+                    Title = $"{projectName.Split('.')[0]} Api", // can be dynamic
+                    Description = $"{projectName.Split('.')[0]} Api - A mongoDB crud api for managing cats.", // can be dynamic
                     Version = "v1"
                 });
 
