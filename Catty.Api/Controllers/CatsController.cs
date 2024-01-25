@@ -69,18 +69,19 @@
         /// <summary>
         /// Updates a cat's speciality by id
         /// </summary>
+        /// <param name="id"></param>
         /// <param name="request"></param>
         /// <returns></returns>
-        [HttpPut("cat")]
+        [HttpPut("cat/{id}")]
         [Consumes("application/json")]
         [Produces("application/json")]
         [ProducesResponseType(typeof(ApiResponse<string>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ApiResponse<EmptyDto>), StatusCodes.Status404NotFound)]
         [ProducesResponseType(typeof(ApiResponse<EmptyDto>), StatusCodes.Status400BadRequest)]
         [SwaggerOperation(nameof(UpdateCat), OperationId = nameof(UpdateCat))]
-        public async Task<IActionResult> UpdateCat([FromBody] UpdateCatRequest request)
+        public async Task<IActionResult> UpdateCat(string id,[FromBody] UpdateCatRequest request)
         {
-            var result = await _catsCollectionService.UpdateCat(request);
+            var result = await _catsCollectionService.UpdateCat(id,request);
 
             return StatusCode(Convert.ToInt32(result.Code), result);
         }

@@ -16,21 +16,4 @@
 		<Folder Include="Services\" />
 	</ItemGroup>
 
-	<ItemGroup>
-		<PackageReference Include="Microsoft.AspNetCore" Version="2.1.7" />
-		<PackageReference Include="Microsoft.AspNetCore.Authentication" Version="2.2.0" />
-		<PackageReference Include="Microsoft.AspNetCore.Authentication.Abstractions" Version="2.2.0" />
-		<PackageReference Include="Microsoft.AspNetCore.Authentication.Core" Version="2.2.0" />
-		<PackageReference Include="Microsoft.AspNetCore.Authorization" Version="8.0.1" />
-		<PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7" />
-		<PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.2.0" />
-		<PackageReference Include="Microsoft.AspNetCore.Hosting.Server.Abstractions" Version="2.2.0" />
-		<PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
-		<PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
-		<PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
-		<PackageReference Include="System.Net.Http" Version="4.3.4" />
-		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
-
-	</ItemGroup>
-
 </Project>

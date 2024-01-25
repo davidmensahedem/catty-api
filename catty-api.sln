@@ -11,9 +11,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "documents", "documents", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{BB2E7FA0-9725-4AF8-B8DF-91B4460C6BB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catty.Api", "Catty.Api\Catty.Api.csproj", "{276E4727-92CB-4B12-BF77-DF16013D08BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catty.Api", "Catty.Api\Catty.Api.csproj", "{276E4727-92CB-4B12-BF77-DF16013D08BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catty.Core", "Catty.Core\Catty.Core.csproj", "{A4E84986-7F21-4E7D-AB56-6B67E9C207F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catty.Core", "Catty.Core\Catty.Core.csproj", "{A4E84986-7F21-4E7D-AB56-6B67E9C207F4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5A2C522D-104C-47E6-8162-42AB947CD779}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.targets = Directory.Build.targets
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

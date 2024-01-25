@@ -99,16 +99,16 @@
             }
         }
 
-        public async Task<bool> UpdateCatSpeciality(UpdateCatRequest request)
+        public async Task<bool> UpdateCatSpeciality(string id, UpdateCatRequest request)
         {
             try
             {
-                _logger.LogDebug("Inside service: {Service} - method: {Method}, about to update the cat with details: {Request} inside the database.",
-                    nameof(CatsCollectionRepository), nameof(UpdateCatSpeciality), request.Serialize());
+                _logger.LogDebug("Inside service: {Service} - method: {Method}, about to update the cat with id: {Id}, and details: {Request} inside the database.",
+                    nameof(CatsCollectionRepository), nameof(UpdateCatSpeciality), id, request.Serialize());
 
                 var updateDefinition = Builders<Cat>.Update.AddToSetEach(cat => cat.Specialities, request.Specialities);
 
-                var updateResult = await _catsCollection.UpdateOneAsync(cat => cat.Id == new ObjectId(request.Id), updateDefinition);
+                var updateResult = await _catsCollection.UpdateOneAsync(cat => cat.Id == new ObjectId(id), updateDefinition);
 
                 if (!updateResult.IsAcknowledged)
                 {

@@ -5,7 +5,7 @@
         Task<List<CatResponse>> GetAllCatsAsync(CatFilter filter);
         Task<CatResponse> GetCatAsync(string id);
         Task<CatResponse> AddCat(AddCatRequest request);
-        Task<bool> UpdateCatSpeciality(UpdateCatRequest request);
+        Task<bool> UpdateCatSpeciality(string id, UpdateCatRequest request);
         Task<bool> DeleteCat(string id);
     }
 }

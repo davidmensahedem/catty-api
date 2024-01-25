@@ -53,9 +53,9 @@
                 Data = cat
             };
         }
-        public async Task<ApiResponse<string>> UpdateCat(UpdateCatRequest request)
+        public async Task<ApiResponse<string>> UpdateCat(string id, UpdateCatRequest request)
         {
-            var result = await _catsCollectionRepository.UpdateCatSpeciality(request);
+            var result = await _catsCollectionRepository.UpdateCatSpeciality(id,request);
 
             if (!result) return new ApiResponse<string>
             {
