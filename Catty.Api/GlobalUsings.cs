@@ -18,4 +18,7 @@ global using MongoDB.Cats.Api.Models;
 global using MongoDB.Driver;
 global using Newtonsoft.Json;
 global using System.ComponentModel.DataAnnotations;
+global using Swashbuckle.AspNetCore.Annotations;
+global using System.Reflection;
+
 

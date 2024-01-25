@@ -41,7 +41,7 @@
         {
             services.AddEndpointsApiExplorer();
 
-            services.AddAppSwaggerGen(CoreConstants.AuthenticationScheme.PrivateKey);
+            services.AddAppSwaggerGen(CoreConstants.AuthenticationScheme.PrivateKey,Assembly.GetExecutingAssembly().GetName().Name ?? string.Empty);
 
             return services;
         }

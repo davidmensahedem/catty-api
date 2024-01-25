@@ -2,6 +2,8 @@
 using Catty.Core.Models.Responses;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
+using System.Reflection;
 using System.Text.Json;
 
 namespace Catty.Core.Extensions
@@ -18,7 +20,7 @@ namespace Catty.Core.Extensions
             return services;
         }
 
-        public static IServiceCollection AddAppSwaggerGen(this IServiceCollection services, string scheme)
+        public static IServiceCollection AddAppSwaggerGen(this IServiceCollection services, string scheme, string projectName)
         {
             if (services is null) throw new ArgumentNullException(nameof(services));
 
@@ -59,6 +61,9 @@ namespace Catty.Core.Extensions
                 });
 
                 c.DocumentFilter<SwaggerDocumentFilter>();
+
+                var xmlFilename = $"{projectName}.xml";
+                c.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
             });
 
             return services;
