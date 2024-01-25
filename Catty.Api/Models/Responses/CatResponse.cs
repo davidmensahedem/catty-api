@@ -1,7 +1,4 @@
-﻿using MongoDB.Bson;
-using MongoDB.Bson.Serialization.Attributes;
-
-namespace Catty.Api.Models.Responses
+﻿namespace Catty.Api.Models.Responses
 {
     public class CatResponse
     {

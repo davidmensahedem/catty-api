@@ -1,6 +1,3 @@
-using Catty.Api.Extensions;
-using Catty.Core.Extensions;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

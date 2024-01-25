@@ -1,12 +1,4 @@
-﻿using Catty.Api.Interfaces;
-using Catty.Api.Models.Filters;
-using Catty.Api.Models.Requests;
-using Catty.Api.Models.Responses;
-using Catty.Core.Models.Responses;
-using Microsoft.AspNetCore.Mvc;
-using MongoDB.Cats.Api.Models;
-
-namespace Catty.Api.Providers
+﻿namespace Catty.Api.Providers
 {
     public class CatsCollectionService : ICatsCollectionService
     {

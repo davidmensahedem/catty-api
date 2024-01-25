@@ -1,9 +1,4 @@
-﻿using MongoDB.Cats.Api.Models;
-using Catty.Api.Models.Filters;
-using Catty.Api.Models.Requests;
-using Catty.Api.Models.Responses;
-
-namespace Catty.Api.Interfaces
+﻿namespace Catty.Api.Interfaces
 {
     public interface ICatsCollectionRepository
     {

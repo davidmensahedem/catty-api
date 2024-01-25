@@ -1,10 +1,4 @@
-﻿using Catty.Api.Interfaces;
-using Catty.Api.Models.Filters;
-using Catty.Api.Models.Requests;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-
-namespace Catty.Api.Controllers
+﻿namespace Catty.Api.Controllers
 {
     [ApiController]
     [Authorize(AuthenticationSchemes = "PrivateKey")]

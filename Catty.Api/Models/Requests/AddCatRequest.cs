@@ -1,7 +1,4 @@
-﻿using Newtonsoft.Json;
-using System.ComponentModel.DataAnnotations;
-
-namespace Catty.Api.Models.Requests
+﻿namespace Catty.Api.Models.Requests
 {
     public class AddCatRequest
     {

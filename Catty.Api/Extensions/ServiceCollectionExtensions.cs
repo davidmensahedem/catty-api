@@ -1,13 +1,4 @@
-﻿using Catty.Api.Interfaces;
-using Catty.Api.Options;
-using Catty.Api.Providers;
-using Catty.Core;
-using Catty.Core.Extensions;
-using Catty.Core.Options;
-using MongoDB.Cats.Api.Models;
-using MongoDB.Driver;
-
-namespace Catty.Api.Extensions
+﻿namespace Catty.Api.Extensions
 {
     public static class ServiceCollectionExtensions
     {

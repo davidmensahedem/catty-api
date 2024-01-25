@@ -1,6 +1,4 @@
-﻿using Newtonsoft.Json;
-
-namespace Catty.Api.Models.Filters
+﻿namespace Catty.Api.Models.Filters
 {
     public class CatFilter
     {

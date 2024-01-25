@@ -1,6 +1,4 @@
-﻿using Newtonsoft.Json;
-
-namespace Catty.Api.Extensions
+﻿namespace Catty.Api.Extensions
 {
     public static class UtilityExtensions
     {

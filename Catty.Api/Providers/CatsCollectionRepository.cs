@@ -1,14 +1,4 @@
-﻿using Catty.Api.Extensions;
-using Catty.Api.Interfaces;
-using Catty.Api.Models.Filters;
-using Catty.Api.Models.Requests;
-using Catty.Api.Models.Responses;
-using Mapster;
-using MongoDB.Bson;
-using MongoDB.Cats.Api.Models;
-using MongoDB.Driver;
-
-namespace Catty.Api.Providers
+﻿namespace Catty.Api.Providers
 {
     public class CatsCollectionRepository : ICatsCollectionRepository
     {
