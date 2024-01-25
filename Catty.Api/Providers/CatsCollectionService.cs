@@ -3,10 +3,7 @@
     public class CatsCollectionService : ICatsCollectionService
     {
         private readonly ICatsCollectionRepository _catsCollectionRepository;
-        public CatsCollectionService(ICatsCollectionRepository catsCollectionRepository)
-        {
-            _catsCollectionRepository = catsCollectionRepository;
-        }
+        public CatsCollectionService(ICatsCollectionRepository catsCollectionRepository) => _catsCollectionRepository = catsCollectionRepository;
 
         public async Task<ApiResponse<List<CatResponse>>> GetAllCats(CatFilter filter)
         {

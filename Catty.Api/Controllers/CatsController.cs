@@ -6,10 +6,7 @@
     public class CatsController : ControllerBase
     {
         private readonly ICatsCollectionService _catsCollectionService;
-        public CatsController(ICatsCollectionService catsCollectionService)
-        {
-            _catsCollectionService = catsCollectionService;
-        }
+        public CatsController(ICatsCollectionService catsCollectionService) => _catsCollectionService = catsCollectionService;
 
         /// <summary>
         /// Gets all the cats

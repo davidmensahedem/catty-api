@@ -8,11 +8,8 @@
         public CatsCollectionRepository(
             IMongoCollection<Cat> catsCollection,
             ILogger<CatsCollectionRepository> logger
-            )
-        {
-            _catsCollection = catsCollection;
-            _logger = logger;
-        }
+            ) =>
+            (_catsCollection, _logger) = (catsCollection, logger);
 
         public async Task<List<CatResponse>> GetAllCatsAsync(CatFilter filter)
         {
